@@ -1,1 +1,7 @@
-7z a -txz -mx=9 -mmt=on nomecompactado.7z nomearquivo
+https://buscalai.cgu.gov.br/PedidosLai/DetalhePedido?id=4173393
+
+liberou planilhas no google drive 
+https://drive.google.com/drive/folders/1pn2tW1-SjFmHXy6--qyzad0y_5rVPqC-?usp=sharing
+
+arquivos no mediafire
+https://www.mediafire.com/folder/cgw7bxi0e53gb/rais_lai

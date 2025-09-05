@@ -17,11 +17,13 @@ Bibliotecas pandas, sqlite3.<br><br>
 - Use o Anaconda prompt ou ative um ambiente virtual ( https://docs.python.org/pt-br/3/library/venv.html )<br>
 - Rode o script pelo comando:<br>
 python rais_lai_gera_sqlite.py<br>
-- Ao final, será gerado um arquivo rais_lai.db, no formato sqlite, com cerca de 16GB, que poderá ser aberto no DB Browser for SQLITE (https://sqlitebrowser.org/).<br>
+- Ao final, será gerado um arquivo rais_lai.db, no formato sqlite, com cerca de 16GB, que poderá ser aberto no DB Browser for SQLITE (https://sqlitebrowser.org/). <br>
 - O arquivo rais_lai.db conterá três tabelas:<br> 
 a) _anos_registros: especificando a quantidade de registros (linhas) de cada ano;<br> 
 b) rais: contendo os dados dos arquivos CSVs. <br>
-c) rais_anocnpj: tabela com quantidade de vínculos por CNPJ (ou código CEI) e por ano.<br><br>
+c) rais_anocnpj: tabela com quantidade de vínculos por CNPJ (ou código CEI) e por ano.<br>
+- Não utilize a aba "Navegar dados" do DB Browser, pois as tabelas são muito grandes (mais de 80 milhões de registros) e podem travar o programa. Use a aba "Executar SQL" e faça uma consulta como <i>SELECT * FROM rais_anocnpj WHERE ano='2020' LIMIT 1000</i><br>
+- Para obter dados de empresas, como a Razão Social, utilize o projeto https://github.com/rictom/cnpj-sqlite . O SQLITE permite cruzar dados de arquivos separados pela opção [ATTACH](https://www.sqlite.org/lang_attach.html) ou pelo botão "Anexar banco de dados" no DBBrowser for SQLITE.<br>
 
 ## Como obter dados mais recentes:
 O Ministério do Trabalho e Emprego tem negado atualização dessas informações sob os seguintes argumentos:<br>

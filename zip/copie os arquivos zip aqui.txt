@@ -1,0 +1,1 @@
+7z a -txz -mx=9 -mmt=on nomecompactado.7z nomearquivo

@@ -13,7 +13,7 @@ Bibliotecas pandas, sqlite3.<br><br>
 ## Procedimento:
 - Faça um espelho desse repositório no seu computador (utilize o botão verde CODE e selecione download)<br>
 - Baixe os arquivos em https://www.mediafire.com/folder/cgw7bxi0e53gb/rais_lai . Se não precisar de todos os períodos, selecione apenas os arquivos dos anos desejados.<br>
-- Copie os arquivos do mediafire para a pasta zip deste projeto.<br>
+- Crie uma nova pasta chamada zip, no mesmo diretório do rais_lai_gera_sqlite e copie os arquivos do mediafire para essa pasta zip.<br>
 - Use o Anaconda prompt ou ative um ambiente virtual ( https://docs.python.org/pt-br/3/library/venv.html )<br>
 - Rode o script pelo comando:<br>
 python rais_lai_gera_sqlite.py<br>

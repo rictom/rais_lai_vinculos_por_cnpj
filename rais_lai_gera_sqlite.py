@@ -54,7 +54,7 @@ print(time.asctime(), 'Carregou arquivos em ' + camdb)
 sqls= '''
     ALTER TABLE rais ADD COLUMN qte INTEGER;
     update RAIS
-    set qte = cast( qtd_vinculos_ativos as INTEGER);
+    set qte = cast( replace(qtd_vinculos_ativos, '.', '') as INTEGER);
     --ALTER TABLE rais DROP COLUMN qte_vinculos_ativos;
     update rais
     set cnpj_raiz = SUBSTR('00000000'|| trim(cnpj_raiz), -8, 8);
